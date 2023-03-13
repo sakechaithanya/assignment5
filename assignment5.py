@@ -44,18 +44,23 @@ class student:
         self.__name=__name
         
     def getName(self):
-        print(self.__name)
+        if self.__name=="sake":
+         print(" yes its crt name",self.__name)
+        else:
+            print("incorrect name!")
     def setRollNumber(self,__rollnumber):
         self.__rollnumber=__rollnumber
          
     def getRollNumber(self):
-        print(self.__rollnumber)
+        if self.__rollnumber==575:
+            print("yes its crt roll number",self.__rollnumber)
+        else:
+            print("incorrect rollnumber")    
 result=student()  
 result.setName("sake")     
 result.setRollNumber(575)
 result.getName()
 result.getRollNumber()
-
 
 #4challenge
 class account:
