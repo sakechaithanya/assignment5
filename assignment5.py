@@ -75,7 +75,7 @@ class account:
 
 class Savaccount(account):
     def __init__(self, title,balance,interest):
-        super(Savaccount,self).__init__(title, balance)
+        super().__init__(title, balance)
         self.interest=interest
         self.interest= self.balance*self.interest/100
         print(self.interest)
@@ -101,7 +101,7 @@ class account:
 
 class Savaccount(account):
     def __init__(self, title,balance,interest):
-        super(Savaccount,self).__init__(title, balance)
+        super().__init__(title, balance)
         self.interest=interest
         self.interest= self.balance*self.interest/100
         print(self.interest)
