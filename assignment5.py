@@ -47,7 +47,7 @@ class student:
            print("incorrect key")
         
     def getName(self):
-        if self.__name=="sake":
+        if self.__name==self.__name:
          print(" yes its crt name",self.__name)
         else:
             print("incorrect name!")
@@ -57,7 +57,7 @@ class student:
         else:
            print("incorrect key")
     def getRollNumber(self):
-        if self.__rollnumber==575:
+        if self.__rollnumber==self.__rollnumber:
             print("yes its crt roll number",self.__rollnumber)
         else:
             print("incorrect rollnumber")    
