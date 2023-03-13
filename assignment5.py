@@ -40,25 +40,30 @@ print(result.div())
 
 #3challenge
 class student:
-    def setName(self,__name):
-        self.__name=__name
+    def setName(self,__name,key):
+        if key=="chay":
+         self.__name=__name
+        else:
+           print("incorrect key")
         
     def getName(self):
         if self.__name=="sake":
          print(" yes its crt name",self.__name)
         else:
             print("incorrect name!")
-    def setRollNumber(self,__rollnumber):
-        self.__rollnumber=__rollnumber
-         
+    def setRollNumber(self,__rollnumber,key):
+        if key=="chey":
+         self.__rollnumber=__rollnumber
+        else:
+           print("incorrect key")
     def getRollNumber(self):
         if self.__rollnumber==575:
             print("yes its crt roll number",self.__rollnumber)
         else:
             print("incorrect rollnumber")    
 result=student()  
-result.setName("sake")     
-result.setRollNumber(575)
+result.setName("sake","chay")     
+result.setRollNumber(575,"chey")
 result.getName()
 result.getRollNumber()
 
