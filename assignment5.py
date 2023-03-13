@@ -36,3 +36,24 @@ print(result.add())
 print(result.subtract())
 print(result.multiply())
 print(result.div())         
+
+
+#4challenge
+class account:
+    def __init__(self,title,balance):
+        self.title=title
+        self.balance=balance
+
+class Savaccount(account):
+    def __init__(self, title,balance,interest):
+        super(Savaccount,self).__init__(title, balance)
+        self.interest=interest
+        self.interest= self.balance*self.interest/100
+        print(self.interest)
+result=Savaccount("sake",5000,5) 
+
+
+
+
+        
+     
