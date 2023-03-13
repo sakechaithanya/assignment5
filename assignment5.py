@@ -36,7 +36,25 @@ result=calulator(10,94)
 print(result.add())
 print(result.subtract())
 print(result.multiply())
-print(result.div())         
+print(result.div())      
+
+#3challenge
+class student:
+    def setName(self,__name):
+        self.__name=__name
+        
+    def getName(self):
+        print(self.__name)
+    def setRollNumber(self,__rollnumber):
+        self.__rollnumber=__rollnumber
+         
+    def getRollNumber(self):
+        print(self.__rollnumber)
+result=student()  
+result.setName("sake")     
+result.setRollNumber(575)
+result.getName()
+result.getRollNumber()
 
 
 #4challenge
