@@ -12,6 +12,7 @@ class var:
         
 result=var(1,3,5)   
 print(result.sqsum())
+
 #2challenge
 class calulator:
     def __init__(self,num1,num2):
@@ -62,8 +63,7 @@ class account:
         print(self.balance)
     def Withdrawal(self , w): 
         if(self.balance < w):
-          
-         print("impossible operation! Insufficient balance !")
+          print("impossible operation! Insufficient balance !")
         else:
            self.balance = self.balance - w
            print(self.balance)
