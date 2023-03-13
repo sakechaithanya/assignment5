@@ -52,6 +52,42 @@ class Savaccount(account):
         print(self.interest)
 result=Savaccount("sake",5000,5) 
 
+#5challenge
+class account:
+    def __init__(self,title,balance):
+        self.title=title
+        self.balance=balance
+    def deposit(self, d):
+        self.balance = self.balance + d
+        print(self.balance)
+    def Withdrawal(self , w): 
+        if(self.balance < w):
+          
+         print("impossible operation! Insufficient balance !")
+        else:
+           self.balance = self.balance - w
+           print(self.balance)
+    def getBalance(self):
+       print(self.balance)
+       
+
+class Savaccount(account):
+    def __init__(self, title,balance,interest):
+        super(Savaccount,self).__init__(title, balance)
+        self.interest=interest
+        self.interest= self.balance*self.interest/100
+        print(self.interest)
+result=Savaccount("sake",5000,5) 
+result.getBalance()
+result.deposit(100)
+result.Withdrawal(10)
+
+
+
+
+        
+     
+
 
 
 
